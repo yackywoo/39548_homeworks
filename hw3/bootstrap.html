@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap HW</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header class="py-3 mb-3 border-bottom">
+            <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+              <div class="dropdown">
+                <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
+                        <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1zM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Inventory</a></li>
+                  <li><a class="dropdown-item" href="#">Customers</a></li>
+                  <li><a class="dropdown-item" href="#">Products</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                </ul>
+              </div>
+        
+              <div class="d-flex align-items-center">
+                <form class="w-100 me-3" role="search">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="flex-shrink-0 dropdown">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://media.istockphoto.com/id/469097183/photo/young-bornean-orangutan-eating-a-banana-on-yellow-background.jpg?s=612x612&w=0&k=20&c=bEZDL-EIzlfdXMHYx92eIJyhkj-QKPnzSf93JryI97w=" alt="mdo" width="32" height="32" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small shadow">
+                    <li><a class="dropdown-item" href="#">Banana Points</a></li>
+                    <li><a class="dropdown-item" href="#">Banana Rewards Shop </a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <div class="container col-xxl-10 col-xxl-8 px-auto py-4" style="background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bfc9850a-eaf7-4301-b5d8-6beccda39171/deg99di-c07fb892-f2bb-4849-9a44-277e6a5f876a.png/v1/fill/w_1192,h_670,q_70,strp/banana_black_out___desktop_wallpaper_by_wolfertdan_deg99di-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYmZjOTg1MGEtZWFmNy00MzAxLWI1ZDgtNmJlY2NkYTM5MTcxXC9kZWc5OWRpLWMwN2ZiODkyLWYyYmItNDg0OS05YTQ0LTI3N2U2YTVmODc2YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.QBIBXpH6PDTewAVnTDf25uzEmIYjBA2rh2X2JID53Qw)"">
+            <div class="row align-items-center g-lg-5 py-5">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">International Bananas </h1>
+                <p class="col-lg-10 fs-4">Join International Bananas <br> A World of Flavor Awaits.</p>
+              </div>
+              <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                  <hr class="my-4">
+                  <small class="text-body-secondary">By clicking Sign up, you agree to banana magic. </small>
+                </form>
+              </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="container marketing mt-4">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://i.etsystatic.com/44509973/r/il/f150da/5013095730/il_1080xN.5013095730_rt8j.jpg">
+                <h2 class="fw-normal">Chief Executive Orangutan</h2>
+                <p>Oliver leads International Bananas with unparalleled passion and expertise from his life in the rainforests, bringing the world's finest bananas to you.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://preview.redd.it/cqwzc9zfr1c91.png?width=640&crop=smart&auto=webp&s=849244d639e0132ee7e4acb13524394d2f1258a7">
+                <h2 class="fw-normal">Chief Operations Orangutan</h2>
+                <p>Our Chief Operations Orangutan swings into action daily, ensuring our global banana operations run smoothly from tree to table.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://www.johndcook.com/gorilla_holding_banana.jpg">
+                <h2 class="fw-normal">Chief Banana Officer</h2>
+                <p>The Chief Banana Officer handpicks the finest bananas worldwide, delivering exceptional flavors straight to your fruit bowl.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">🌍 Global Sourcing. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+                <p class="lead">Our extensive network of trusted farmers allows us to source a diverse array of banana varieties worldwide. This means you can enjoy exotic and unique flavors not typically found in local markets, all year round.</p>
+              </div>
+              <div class="col-md-5">
+                <img src = "https://i.guim.co.uk/img/media/1485cb8b39c8a25bf6df4ad427f0f24351b34c84/0_334_5100_3060/master/5100.jpg?width=1200&quality=85&auto=format&fit=max&s=7d4dadad32364fbd7f27b6a996a58530" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Monkey Inspectors</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)">
+                </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">🌟Excellent Quality Control. <span class="text-body-secondary">See for yourself.</span></h2>
+                <p class="lead">We uphold the highest standards of quality by implementing strict quality control measures at every stage—from plantation to your doorstep. Each banana is meticulously inspected for freshness, ripeness, and taste to ensure it meets our exceptional standards. Our team of experts combs through every single banana to ensure the highest quality.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src = "https://www.berrypatchfarms.net/wp-content/uploads/2024/05/how-many-bananas-do-monkeys-eat-a-day.webp" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Monkey Inspectors</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)">
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">😊 Go Bananas.</h2>
+                <p class="lead">At International Bananas, your happiness is our top priority. We guarantee complete customer satisfaction with every purchase. If you're not delighted with your bananas for any reason, we'll make it right—whether through a replacement, refund, or personalized assistance to find the perfect variety for you. Our commitment is to ensure you have an exceptional experience every time you choose us.</p>
+              </div>
+              <div class="col-md-5">
+                <img src = "https://i.ytimg.com/vi/ljUIOZXXHbA/maxresdefault.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Monkey Inspectors</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)">
+                </div>
+            </div>
+        
+            <hr class="featurette-divider mb-4">
+        
+            <!-- /END THE FEATURETTES -->
+        </div>
+
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Banana</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">© 2024 International Bananas, Inc</p>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
