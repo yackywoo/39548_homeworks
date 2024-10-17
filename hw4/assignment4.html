@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .code {
+        font-family: Consolas,"courier new";
+        color: blue;
+        background-color: #f1f1f1;
+        padding: 2px;
+        font-size: 105%;
+    }
+    </style>
+</head>
+<body>
+    <h1>HW #4 - Javascript</h1>
+    <ol>
+        <li>
+            <p> Looping a Triangle <br>
+                <p class="code" >
+                    for (let n = 1; n <= 7; n = n + 1) { <br>
+                    &emsp;&emsp; console.log("#".repeat(n)) <br>
+                }
+                </p>
+            </p>
+        </li>
+
+        <li>
+            <p>FizzBuzz</p>
+            <p class="code">
+                for (let x = 1; x <= 100; x = x + 1) { <br>
+                    &emsp;&emsp;    if (x % (3 * 5) == 0) { <br>
+                        &emsp;&emsp;&emsp;&emsp;    console.log("FizzBuzz") <br>
+                    &emsp;&emsp;} else if (x % 3 == 0) { <br>
+                        &emsp;&emsp;&emsp;&emsp;    console.log("Fizz") <br>
+                    &emsp;&emsp;} else if (x % 5 == 0) { <br>
+                        &emsp;&emsp;&emsp;&emsp;    console.log("Buzz") <br>
+                    &emsp;&emsp;} else { <br>
+                        &emsp;&emsp;&emsp;&emsp;console.log(x) <br>
+                    &emsp;&emsp;} <br>
+                }
+            </p>
+        </li>
+
+        <li>
+            <p>Chessboard</p>
+            <p class="code">
+                let row_max = 8 <br>
+                let col_max = 8 <br><br>
+
+                for (let row = 0; row < row_max; row = row + 1) { <br>
+                &emsp;&emsp;    if (row % 2 == 0) { <br>
+                    &emsp;&emsp;&emsp;&emsp;        console.log(" #".repeat(col_max / 2)) <br>
+                &emsp;&emsp;    } else { <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        if (col_max % 2 == 0) { <br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//if even columns this works <br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    console.log("# ".repeat(col_max / 2)) <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        } else { <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    //if odd columns need extra '#' at end <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        console.log("# ".repeat(col_max / 2) + "#") <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    } <br>
+                    &emsp;&emsp;   } <br>
+                } <br>
+            </p>
+        </li>
+    </ol>
+</body>
+</html>
