@@ -11,9 +11,11 @@ let key_to_drum = {
 
 $(document).ready(function() {
     //clicking the buttons via browser
-    $(".drum").click(function() {
-        console.log($(this).text()+" clicked");
-        drumSound(key_to_drum[$(this).text()]);
+    $("button").click(function() {
+        //get first letter of drum class button clicked
+        let letter = $(this).attr("class")[0];
+        console.log(letter+" clicked");
+        drumSound(key_to_drum[letter]);
     });
 
     //presing physical keys
